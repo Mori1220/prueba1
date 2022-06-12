@@ -11,3 +11,4 @@ function suma(a, b) {
   const result = numeros.reduce(suma);
   
   console.log(result); 
+  
