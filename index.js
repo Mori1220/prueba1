@@ -1,4 +1,46 @@
 
+// El funcionamiento filter consiste en filtrar uno o más elementos (un subconjunto) de una colección más grande de elementos (un superconjunto) basándose en alguna condición/preferencia.
+
+// Caso de uso:Tenemos una lista donde se almacenan los nombres y función de los ingenieros encargados de desarrollar una aplicación. Con filter podremos filtrar los nombres únicamente de los encargados de la programación de la aplicación. 
+
+
+let APP = [
+    {
+        nombre: "Juan",
+          puesto: "programador"
+     },
+    {
+        nombre: "Cecilia",
+        puesto: "Documentacion"
+    },
+    {
+        nombre: "Vale",
+          puesto: "testing"
+    },
+    {
+        nombre: "daniel",
+          puesto: "diseño frontend"
+     },
+    {
+        nombre: "Fly",
+          puesto: "programador"
+    },
+    {
+        nombre: "Julio",
+          puesto: "documentacion"
+    },
+    {
+        nombre: "Elian",
+          puesto: "programador"
+  },
+
+]
+
+let programador = APP.filter(miembro => miembro.puesto == "programador")
+
+console.log(programador);
+
+
 //El findIndex() método devuelve el índice del primer elemento de una matriz que pasar una prueba (en forma de una función).
 //El findIndex() método ejecuta la función una vez para cada elemento presente en la matriz:
 //Si encuentra un elemento de matriz, donde la función devuelve un valor verdadero, FindIndex () devuelve el índice de ese elemento de la matriz (y no comprueba los valores restantes)En otro caso devuelve indefinido
@@ -132,6 +174,7 @@ let people = [
   })
   
   console.log(peopleFullnames);
+
 
 
 
