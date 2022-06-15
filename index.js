@@ -1,4 +1,15 @@
 
+//For of: La sentencia sentencia for...of ejecuta un bloque de código para cada elemento de un objeto iterable, como lo son: String, Array, objetos similares al array, permite que dentro de la ejecución del bucle tengamos acceso al elemento que estemos tratando. 
+//Caso de uso: Tenemos un array con diferentes valores y queremos modificar estos valores, sumándoles 33, por lo cual en este caso le implementaremos un for permitiendo tener acceso a este array y modificarlo con el valor de value.  
+
+let num = [200, 300, 250];
+
+for (let value of num) {
+  value += 33;
+  console.log(value); 
+}
+
+
 //Hoisting: El hoisting es un nombre utilizado para referirse a cómo funcionan los contextos de ejecución en JavaScript para la creación y ejecución de funciones y variables.
 
 //Caso de uso: En este caso podemos llamar a una función y definirla más abajo, porque automáticamente JS la “subirá”. Así, este código funciona correctamente.
@@ -112,6 +123,7 @@ let people = [
   })
   
   console.log(peopleFullnames);
+
 
 
 
