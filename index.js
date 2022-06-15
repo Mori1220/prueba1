@@ -1,4 +1,18 @@
 
+//Replace: Replace nos sirve para remplazar caracteres dentro de una cadena de texto. 
+//El método replace busca una cadena o un valor especificado y devuelve una cadena con los valores especificados reemplazados.
+
+//Caso de uso: Tenemos una variable con un nombre guardado y queremos reemplazar el primer nombre por otro nombre pero el mismo apellido.
+
+var nombre = "Mori Yllescas"
+var arr = "Mori"; 
+var nuevoNombre = "Karla";
+
+var newName = nombre.replace(arr, nuevoNombre);
+
+console.log(newName); 
+
+
 //El método reduce() ejecuta una función reductora sobre cada elemento de un array, devolviendo como resultado un único valor.
 
 //caso de uso: en este caso se quiere hacer la suma de todos los números ingresados por el programador. Ingresando cada valor y nuestra función reduce nos regresará un único valor.
@@ -57,6 +71,7 @@ let people = [
   })
   
   console.log(peopleFullnames);
+
 
 
 
