@@ -1,4 +1,20 @@
 
+
+//Shift: El método shift extrae el primer elemento del vector y desplaza hacia delante el resto de elementos del vector 
+
+//Caso de uso: Tenemos una lista de alumnos y se quiere eliminar el primer nombre de la variable alumnos.
+
+
+var Alumnos = ['Karla', 'Emmanuel', 'Cecilia', 'Roberto'];
+
+console.log('Alumnos antes: ' + Alumnos);
+
+var eliminado = Alumnos.shift();
+
+console.log('Alumnos después: ' + Alumnos);
+
+console.log('Elemento eliminado: ' + eliminado);
+
 //Replace: Replace nos sirve para remplazar caracteres dentro de una cadena de texto. 
 //El método replace busca una cadena o un valor especificado y devuelve una cadena con los valores especificados reemplazados.
 
@@ -11,6 +27,7 @@ var nuevoNombre = "Karla";
 var newName = nombre.replace(arr, nuevoNombre);
 
 console.log(newName); 
+
 
 
 //El método reduce() ejecuta una función reductora sobre cada elemento de un array, devolviendo como resultado un único valor.
