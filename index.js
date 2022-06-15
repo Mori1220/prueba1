@@ -1,4 +1,22 @@
 
+// El método find() devuelve el valor del primer elemento del array que cumple la función de prueba proporcionada. 
+
+//caso de uso: En este caso queremos encontrar la información de las pcs en un array mediante una de sus propiedades alojadas.  
+
+
+const inventario = [
+    {nombre: 'pcs', numpiezas: 22},
+    {nombre: 'cable para router', numpiezas: 10},
+    {nombre: 'router', numpiezas: 25}
+];
+
+function espcs(equipo) {
+    return equipo.nombre === 'pcs';
+}
+
+console.log(inventario.find(espcs));
+
+
 //El findIndex() método devuelve el índice del primer elemento de una matriz que pasar una prueba (en forma de una función).
 //El findIndex() método ejecuta la función una vez para cada elemento presente en la matriz:
 //Si encuentra un elemento de matriz, donde la función devuelve un valor verdadero, FindIndex () devuelve el índice de ese elemento de la matriz (y no comprueba los valores restantes)En otro caso devuelve indefinido
@@ -132,6 +150,7 @@ let people = [
   })
   
   console.log(peopleFullnames);
+
 
 
 
