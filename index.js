@@ -1,4 +1,20 @@
 
+//El método reduce() ejecuta una función reductora sobre cada elemento de un array, devolviendo como resultado un único valor.
+
+//caso de uso: en este caso se quiere hacer la suma de todos los números ingresados por el programador. Ingresando cada valor y nuestra función reduce nos regresará un único valor.
+
+function suma(a, b) {
+    return a + b;
+  }
+  
+  const numeros = [10, 20, 30, 40,];
+  
+  const result = numeros.reduce(suma);
+  
+  console.log(result); 
+  
+
+
 //Caso de uso en cadena: Lo que hacemos es leer texto.txt. Si ocurre un error, la promesa se rechaza y mostramos el error con console.error. Si lo lee, ejecutamos su lectura en el primer .then y corremos un nuevo readFile. Las Promesas en JavaScript son acciones que se resolverán a futuro (cuando se pueda) y que sabremos si se llevaron a cabo con éxito o no
 
 readFile('./texto.txt')
@@ -41,6 +57,7 @@ let people = [
   })
   
   console.log(peopleFullnames);
+
 
 
 
